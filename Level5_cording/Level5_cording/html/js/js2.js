@@ -18,40 +18,24 @@ $(document).ready(function(){
 });
 
 
-$(function(){
-    var slider = ".slider_bottom"; // スライダー
-    var thumbnailItem = ".thumbnail .thum"; // サムネイル画像アイテム
-    
-    // サムネイル画像アイテムに data-index でindex番号を付与
-    $(thumbnailItem).each(function(){
-     var index = $(thumbnailItem).index(this);
-     $(this).attr("data-index",index);
-    });
-    
-    // スライダー初期化後、カレントのサムネイル画像にクラス「thumbnail-current」を付ける
-    // 「slickスライダー作成」の前にこの記述は書いてください。
-    $(slider).on('init',function(slick){
-     var index = $(".slide-item.slick-slide.slick-current").attr("data-slick-index");
-     $(thumbnailItem+'[data-index="'+index+'"]').addClass("thumbnail-current");
-    });
+$(document).ready(function(){
+  　$('.slider_bottom2').slick({
+      asNavFor:'.thumbnail2',
+      autoplay: false,
+      adaptiveHeight: true,
+      arrows: true,
+      slidesToShow:1,
+      nextArrow:'<div class="slideright"><img src="images2/migi_sp.png"></div>',
+      prevArrow:'<div class="slideleft"><img src="images2/hidari_sp.png"></div>'
+  　});
 
- //slickスライダー初期化  
- $(slider).slick({
-    autoplay: true,
-    fade: true,
-    infinite: false //これはつけましょう。
-  });
-
-$(thumbnailItem).on('click',function(){
-    var index = $(this).attr("data-index");
-    $(slider).slick("slickGoTo",index,false);
-  });
-  
-  //サムネイル画像のカレントを切り替え
-  $(slider).on('beforeChange',function(event,slick, currentSlide,nextSlide){
-    $(thumbnailItem).each(function(){
-      $(this).removeClass("thumbnail-current");
+  $('.thumbnail2').slick({
+      asNavFor:'.slider_bottom2',
+      focusOnSelect: true,
+      arrows: false,
+      slidesToShow: 3,
     });
-    $(thumbnailItem+'[data-index="'+nextSlide+'"]').addClass("thumbnail-current");
-  });
 });
+
+
+

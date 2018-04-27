@@ -4,4 +4,10 @@ $(document).ready(function(){
         dots: true
 
 })
+
+$('#slider2').slick({
+    arrows: false,
+    dots: true
+
+})
 });
