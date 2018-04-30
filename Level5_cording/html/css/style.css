@@ -47,6 +47,7 @@ header {
 /* sub */
 
 #sub{
+    z-index: 10;
     position: fixed;
     top: 250px;
     right: 10px;
@@ -122,7 +123,7 @@ header {
     margin: 0 auto 0 auto;
     width: 1080px;
     height: 235px;
-    background-image: url(../images/bgimage.png);
+    background-image: url(../images/b_01image.png);
     background-position: center 0%;
     background-repeat: no-repeat, no-repeat;
 }
@@ -147,6 +148,7 @@ header {
 }
 
 input[type="text"]{
+    border-radius: 7px;
     font-size: 30px;
     width: 335px;
     height: 40px;
@@ -194,10 +196,16 @@ input[type="text"]{
 }
 
 .thumbnail{ 
+    background-image: url(../images/b_01.png);
+    background-position: left 43px top 0px;
+    background-repeat: no-repeat, no-repeat;
     padding-left: 40px;
     width: 1042px;
 }
 
+.thum:hover{
+    opacity: 0;
+}
 
 .slider_bottom {
     padding-left: 50px;
@@ -495,14 +503,25 @@ padding-left: 23px;
 
 /*スライダb*/
 .slider_bottom2{
-    padding-left: 51px;
+    padding-left: 54px;
     margin: 0 auto 0 auto;
     
 }
 
-.thumbnail2{ 
-    width: 599px;
-    padding-left: 0;
+.slick-list draggable{
+    width: 188px;
+}
+
+.thum_sp:hover{
+    opacity: 0;
+}
+
+.thumbnail2{     
+    background-image: url(../images2/tagon1_sp.png);
+    background-position: left 23px top 0px;
+    background-repeat: no-repeat, no-repeat;
+    width: 600px;
+    padding-left: 23px;
     margin: 0 0 20px ;
 }
 
