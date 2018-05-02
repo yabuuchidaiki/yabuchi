@@ -85,8 +85,7 @@ header {
 }
 
 #test {
-    margin-right: 85px;
-    margin-left: 45px;
+    padding-left: 105px;
 }
 
 #text1 {
@@ -94,7 +93,7 @@ header {
 }
 
 #kanji1{
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 #kanji2 {
@@ -103,7 +102,7 @@ header {
 }
 
 #kanji3{
-    padding-left: 100px;
+    padding-left: 150px;
     float: left;
 }
 
@@ -123,7 +122,7 @@ header {
     margin: 0 auto 0 auto;
     width: 1080px;
     height: 235px;
-    background-image: url(../images/b_01image.png);
+    background-image: url(../images/bgimage.png);
     background-position: center 0%;
     background-repeat: no-repeat, no-repeat;
 }
@@ -299,6 +298,9 @@ input[type="text"]{
     list-style-type: none;
 }
 
+#ul_logo_none{
+    list-style-type: none;
+}
 
 .ul_2{
     list-style-type: disc;
