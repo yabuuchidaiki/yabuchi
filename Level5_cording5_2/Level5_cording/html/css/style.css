@@ -196,25 +196,22 @@ input[type="text"]{
 }
 
 .thumbnail{
-   
+    color: #ed0d00;
     text-align: center;
-
     margin: 20px 40px 0 20px;
     padding-left: 0;
-    width: 1019px;
+    width: 1020px;
 }
 
 .thumbnail li{
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
     width: 337px !important;
 }
 
-
 .thum{
-    border: 1px solid #000000;
-    color: #ed0d00;
+    border: 3px solid #ed0d00;
 }
 
 #thum1{
@@ -386,6 +383,10 @@ body{
     margin: 0 auto 0 auto;
 }
 
+a:hover{
+    opacity: 0.5;
+}
+
 /*sp共通*/
 
 /*sub*/
@@ -534,19 +535,31 @@ padding-left: 23px;
     width: 188px;
 }
 
-.thum_sp:hover{
-    opacity: 0;
-}
-
-.thumbnail2{     
-    background-image: url(../images2/tagon1_sp.png);
-    background-position: left 23px top 0px;
-    background-repeat: no-repeat, no-repeat;
-    width: 600px;
-    padding-left: 23px;
+.thumbnail2{
+    padding-left: 0;
+    color: #ed0d00;
+    width: 599px;
     margin: 0 0 20px ;
 }
 
+
+
+.thum_sp{width: 196px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 2px solid #ed0d00;
+}
+
+#thum_sp1{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#thum_sp2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 .slideleft {
     position: absolute;
