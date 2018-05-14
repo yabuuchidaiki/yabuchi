@@ -197,16 +197,16 @@ input[type="text"]{
 .thumbnail{
     color: #ed0d00;
     text-align: center;
-    margin: 20px 40px 0 20px;
+    margin: 20px 0 0 39px;
     padding-left: 0;
-    width: 1020px;
+    width: 1001px;
 }
 
 .thumbnail li{
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 25px;
-    width: 337px !important;
+    width: 331px !important;
 }
 
 .thum{
@@ -380,8 +380,10 @@ footer{
         display: block;
     }
 
+
+
 body{
-    width: 599px;
+    width: 100%;
     margin: 0 auto 0 auto;
 }
 
