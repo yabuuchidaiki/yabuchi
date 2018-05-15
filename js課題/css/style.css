@@ -7,19 +7,21 @@ body{
 }
 
 header{
-    height: 200px;
-    border: 1px solid #000000;
+    height: 100px;
+	border: 1px solid #000000;
+	background-color: azure;
 }
 
 h1{
-    height: 200px;
-    line-height: 200px;
     text-align: center;
 }
 
+main {
+	height: 1000px;
+}
 
+/*課題1*/
 .smooth {
-    display: block;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -27,7 +29,19 @@ h1{
     height:50px;
     background-color: blueviolet;
     line-height: 50px;
-    text-align: center;
+	text-align: center;
+
+}
+
+.smooth a {
+	display: block;
+	color: #00f;
+	width: 100%;
+	height: 100px;
+}
+
+.smooth:hover{
+	opacity: 0.5;
 }
 
 #header2 {
@@ -36,7 +50,15 @@ h1{
     height: 20px;
 }
 
-#acMenu dt{
+/*課題1*/
+
+/* 課題2 */
+
+#acmenu {
+	text-align: center;
+}
+
+#acmenu dt{
 	display:block;
 	width:200px;
 	height:50px;
@@ -45,7 +67,8 @@ h1{
 	border:rgb(136, 136, 136) 1px solid;
 	cursor:pointer;
 	}
-#acMenu dd{
+
+#acmenu dd{
     background:#e4e4e4;
     margin-left: 0;
 	width:200px;
@@ -54,4 +77,168 @@ h1{
 	text-align:center;
 	border:rgb(136, 136, 136) 1px solid;
 	display:none;
-	}
+    }
+    
+/* 課題2 */
+     
+/* 課題3 */	
+   #modal-content {
+	width: 400px ;
+	height: 100px;
+	margin: 0 ;
+	padding: 10px 20px ;
+	border: 2px solid rgb(124, 124, 124) ;
+	border-radius: 5px;
+	background: #fff ;
+	position: fixed ;
+	display: none ;
+	z-index: 2 ;
+	text-align: center;
+   }
+	
+   #contents {
+	   text-align: center;
+   }
+
+   #modal-close {
+	   float: right;
+	   text-decoration: none;
+	   background-color: #00f;
+	   border: 1px solid #00f;
+	   border-r
+   }
+
+   #modal-content-innar{
+	margin:0 auto;
+	width:80%;
+   }
+	 
+   #modal-overlay {
+	z-index: 1 ;
+	display: none ;
+	position: fixed ;
+	top: 0 ;
+	left: 0 ;
+	width: 100% ;
+	height: 120% ;
+	background-color: rgba( 0,0,0, 0.75 ) ;
+   }
+	
+   .button-link {
+	color: #00f ;
+	text-decoration: underline ;
+   }
+	
+   .button-link:hover {
+	cursor: pointer ;
+	color: #f00 ;
+   }
+
+/*課題4*/
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+ 
+nav.globalMenuSp ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+ 
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+ 
+
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+ 
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+}
+ 
+
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+
+.navToggle {
+    display: block;
+    position: fixed; 
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 3;
+    background: #666;
+    text-align: center;
+}
+ 
+.navToggle span {
+    display: block;
+    position: absolute;  
+    width: 30px;
+    border-bottom: solid 3px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+ 
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+ 
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+ 
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+ 
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+
+
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

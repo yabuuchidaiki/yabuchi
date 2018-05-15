@@ -3,20 +3,34 @@
 <head>
 <meta charset="utf-8">
 <link  href="css/style.css" rel="stylesheet">
-
 <title>課題</title>
-
 </head>
 
 <body>
     <header>
-    <h1 id="index">見出し１</h1>
+    <h1 id="index">javascript課題</h1>
     </header>
 
-    <nav>
-    <p id="header2">見出し２</p>
+    <div class="navToggle">
+            <span></span><span></span><span></span><span>menu</span>
+        </div>
 
-    <dl id="acMenu">
+    <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#">カテゴリ</a></li>
+                <li><a href="#">商品</a></li>
+                <li><a href="#">カート内容</a></li>
+                <li><a href="#">会員情報</a></li>
+                <li><a href="#">注文履歴</a></li>
+                <li><a href="#">ログアウト</a></li>
+            </ul>
+        </nav>
+
+    <main>
+    <nav>
+    <h1>課題２　アコーディオン</h1>
+
+    <dl id="acmenu">
             <dt>開閉コンテンツNo.1</dt>
             <dd>No.1コンテンツ内部</dd>
             <dt>開閉コンテンツNo.2</dt>
@@ -31,22 +45,41 @@
     </nav>
 
 
-    <h1>見出し３</h1>
+    <h1>課題３ モーダルウィンドウ</h1>
+
+    <div id="orver">
+        <div id="wrap">
+        <div id="contents">
+        <a id="modal-open" class="button-link">モーダルウィンドウ</a>
+        </div> 
+        </div> 
+    </div> 
+        
+
+       <div id="modal-content">
+           <a id="modal-close" class="button-link">×</a>
+            <div id="modal-content-innar">
+
+        <p class="red bold">こんな感じのウィンドウが表示される。</p>
+        </div>
+        </div>
+
+
+
     <h1>見出し４</h1>
 
    <div class="smooth">
     <a href="#index">上</a>
    </div>
+    </main>
 
     <footer>
 
     </footer>
-    <script
-			  src="https://code.jquery.com/jquery-3.3.1.js"
-			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-              crossorigin="anonymous">
-              </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/js1.js"></script>
+    
 </body>
 
 </html>
