@@ -58,6 +58,7 @@ main {
 /* 課題2 */
 
 #acmenu {
+    width: 202px;
 	text-align: center;
 }
 
@@ -66,7 +67,8 @@ main {
 	width:200px;
 	height:50px;
 	line-height:50px;
-	text-align:center;
+    text-align:center;
+    background-color: rgb(141, 141, 141);
 	border:rgb(136, 136, 136) 1px solid;
 	cursor:pointer;
 	}
@@ -290,7 +292,7 @@ nav.globalMenuSp.active {
 
 .menu > li {
     float: left;
-    width: 25%; /* グローバルナビ4つの場合 */
+    width: 25%;
     height: 50px;
     line-height: 50px;
     background-color: rgb(93, 105, 62);
@@ -340,8 +342,6 @@ ul.menu__fourth-level {
 }
 
 
-
-/* 下矢印 */
 .init-bottom:after {
     content: '';
     display: inline-block;
@@ -355,7 +355,6 @@ ul.menu__fourth-level {
     transform: rotate(45deg);
 }
 
-/* floatクリア */
 .menu:before,
 .menu:after {
     content: " ";
@@ -387,4 +386,51 @@ li.menu__single:hover ul.menu__second-level {
     top: 50px;
     visibility: visible;
     opacity: 1;
+}
+  /*課題5*/
+
+/*課題6*/
+.tab_top {
+    margin-bottom: 0;
+    padding-left: 0%;
+    width: 1000px;
+    height: 32px;
+    list-style-type: none;
+}
+.tab_top li {
+    display: block;
+    width: 248px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #000; 
+    background-color: rgb(146, 144, 144);
+
+}
+
+.tab_top .select{
+    background-color: rgb(185, 185, 185);
+}
+
+.tab_top li:hover {
+    opacity: 0.9;
+}
+
+.tab ul{
+    margin-top: 0;
+    padding-left: 0;
+    height: 100px;
+    background-color: rgb(185, 185, 185);
+}
+
+.tab li{
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.hide {
+    display: none;
 }

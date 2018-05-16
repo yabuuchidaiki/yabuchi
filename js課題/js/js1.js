@@ -78,5 +78,18 @@ $(function(){
     });
 });
 
-//課題５
+//課題7
 
+$(function() {
+    $('.tab_top li').click(function(){
+        var index = $('.tab_top li').index(this);
+
+    $('.tab li').css('display', 'none');
+
+    $('.tab li').eq(index).css('display','block');
+
+    $('.tab li').removeClass('select');
+
+    $(this).addClass('select');
+    });
+});
