@@ -19,7 +19,7 @@ $(function(){
 		});
 	});
 
-  //課題３
+//課題３
 
   $(function(){
     $("#modal-open").click(function(){
@@ -78,18 +78,33 @@ $(function(){
     });
 });
 
+//課題6
+
 //課題7
 
 $(function() {
     $('.tab_top li').click(function(){
         var index = $('.tab_top li').index(this);
 
-    $('.tab li').css('display', 'none');
+    $('.content li').css('display', 'none');
 
-    $('.tab li').eq(index).css('display','block');
+    $('.content li').eq(index).css('display','block');
 
-    $('.tab li').removeClass('select');
+    $('.tab_top li').removeClass('select');
 
     $(this).addClass('select');
+    });
+});
+
+//課題8
+
+$(document).ready(function () {
+    $.getJSON("data.json", function(data){
+        for(var i in data){
+        $("#output").append("<li><strong>" + data[i].division + "</strong></li>");
+            for(var j in data[i].person){
+                $("#output").append("<li>" + data[i].person[j].name + "（" + data[i].person[j].age + "才）</li>n");
+            }
+        }
     });
 });
