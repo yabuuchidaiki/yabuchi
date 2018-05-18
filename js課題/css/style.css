@@ -116,9 +116,8 @@ main {
    #modal-close {
 	   float: right;
 	   text-decoration: none;
-	   background-color: #00f;
-	   border: 1px solid #00f;
-	   border-r
+	   background-image: url(../images/batu.png)
+
    }
 
    #modal-content-innar{
@@ -399,6 +398,12 @@ li.menu__single:hover ul.menu__second-level {
 
 /*課題6*/
 
+h2 {
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+/*スライド2*/
 .pagiNation {
     bottom: 15px;
     left: 0;
@@ -476,7 +481,142 @@ li.menu__single:hover ul.menu__second-level {
 }
 /* スライダリストのスタイル */
 
+/*スライド2*/
 
+/*スライド1*/
+
+#css-slider {
+	width: 300px;
+	height: 50px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+ 
+.slide-item {
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+	width: 300px;
+	height: 50px;
+	float: left;
+    position: relative;
+}
+ 
+.slider2_1 {
+    background-color: red;
+}
+
+.slider2_2 {
+    background-color: green;
+}
+
+.slider2_3 {
+    background-color: blue;
+}
+.slider-wrapper {
+	width: 300%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 10s infinite;
+}
+ 
+@keyframes slider {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-300px); }
+  66% { transform: translateX(-600px); }
+  100% { transform: translateX(0); }
+}
+/*スライド1*/
+
+
+/*スライド3*/
+.slideShow {
+    margin: 0 auto;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+  
+  }
+  
+  .slideWrap_3 {
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .slideShow ul {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-left: 0;
+  }
+  .slideShow ul li {
+    padding: 0 20px;
+    width: 50px;
+    text-align: center;
+    float: left;
+    display: inline;
+    box-sizing: border-box;
+  }
+  
+ .slideShow .btnNext:hover {
+    opacity: 0.6;
+  }
+  
+  .pagiNation_3 {
+    left: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    z-index: 110;
+    padding-top: 45px;
+  }
+  .pagiNation_3 a {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+  .pagiNation_3 a:hover {
+    opacity: 0.6;
+  }
+  .pagiNation_3 a.pn1, .pagiNation_3 a.pn2, .pagiNation_3 a.pn3 {
+    opacity: 0.3;
+  }
+  .pagiNation_3 a.pn_Active {
+    opacity: 1;
+  }
+  .pagiNation_3 a.pn_Active:hover {
+    opacity: 1;
+  }
+  
+  .pagiNation_3 a.pn_1 {
+    background-image: url(../images/fontsize_l.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+  .pagiNation_3 a.pn_2 {
+    background-image: url(../images/fontsize_m.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+  .pagiNation_3 a.pn_3 {
+    background-image: url(../images/fontsize_s.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+
+/*スライド3*/
 
 /*課題6*/
 
